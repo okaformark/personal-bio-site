@@ -15,3 +15,9 @@ const projects= [
   }
 ]
 
+const createProjectCards =() =>{
+    let domString ="";
+    for (i = 0; i < projects.length; i++){
+        domString += `<div class =fullPage `
+    }
+};
