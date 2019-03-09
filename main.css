@@ -1,3 +1,23 @@
 body{
     background-color: darkorange;
 }
+header{
+    border: 1px solid red ;
+    background-color: antiquewhite;
+    flex-direction: column;
+    text-align: center;
+}
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+img{
+    border-radius: 50%;
+    align-content: center;
+}
+ul[id=navLinks] {
+    display: flex;
+    color: green;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: justify;
+    justify-content: space-around;
+}
