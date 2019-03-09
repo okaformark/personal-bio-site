@@ -25,7 +25,7 @@ const createProjectCards =() =>{
         domString += `<p> ${projects[i].technologiesUsed} </p>`;
         domString += `<a href = ${projects[i].url}> <h3>GitHub Account</h3></a>`;
         domString += `<a href = ${projects[i].githubUrl}> <h3>My GitHub URL</h3></a>`;
-        domString += `<p>${projects[i].available}`;
+        //domString += `<p>${projects[i].available}`;
         domString += `</div>`;
         if(projects[i].available === true){
             printToDom('projectsPage', domString);
