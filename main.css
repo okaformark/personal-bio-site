@@ -12,6 +12,8 @@ h1{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 img{
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     align-content: center;
 }
