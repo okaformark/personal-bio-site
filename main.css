@@ -29,3 +29,6 @@ h2[id = about-me]{
     font-family: 'Courier New', Courier, monospace;
     color: darkred;
 }
+.hidePage {
+    display: none;
+  }

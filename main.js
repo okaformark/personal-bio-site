@@ -15,6 +15,35 @@ const printToDom = (divId, textToPrint) => {
     selectedDiv.innerHTML = textToPrint;
 };
 
+const showPage =(e)=> {
+    const navId = e.target.id;
+   
+    const pageElements = document.getElementsByClassName('fullPage');
+    for(let i = 0; i<pageElements.length; i++){
+        pageElements[i].classList.add('hidePage');
+    }
+    switch (navId) {
+        case 'navToBio':
+          document.getElementById('bioPage').classList.remove('hidePage');
+          break;
+        case 'navToTechnologies':
+          document.getElementById('technologiesPage').classList.remove('hidePage');
+          break;
+        case 'navToProjects':
+          document.getElementById('projectsPage').classList.remove('hidePage');
+          break;
+      }
+};
+
+const addClickEvents = () => {
+    const navElements = document.getElementsByClassName('nav-item');
+    for(let i = 0; i<navElements.length; i++){
+        navElements[i].addEventListener('click',showPage);
+    }
+    
+   };
+
+
 const createProjectCards =() =>{
     let domString ='';
     for (i = 0; i < projects.length; i++){
@@ -34,5 +63,6 @@ const createProjectCards =() =>{
 };
 const init = () =>{
     createProjectCards();
+    addClickEvents();
 };
 init();
