@@ -7,20 +7,67 @@
         <title>Mark okafor's Bio page</title>
     </head>
     <body>
-        <nav>
-             <!-- TODO: Insert some sort of H1-H6 with your name here --> -->
-            <header>
-                <h1>Mark Okafor</h1>
-                <img src="" alt="my-pic" height="150px" width="150px">
-                <ul id="navLinks">
-                    <li><a class="nav-item" id="navToBio" href="#bioPage">Bio</a></li>
-                    <li><a class="nav-item" id="navToTechnologies" href="#technologiesPage">Technologies</a></li>
-                    <li><a class="nav-item" id="navToProjects" href="#projectsPage">Projects</a></li>
-                </ul>
-            </header>
+        <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul id="navbar-nav ml-auto">
+                        <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">About me</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Technologies</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Connect</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-          <!-- End Navigation -->
-        
+        <!-- Image Slider -->
+        <div id="slies" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators">
+                <li data-target="#slides" data-slide-to="0" class="active"></li>
+                <li data-target="#slides" data-slide-to="1"></li>
+                <li data-target="#slides" data-slide-to="2"></li>
+                <li data-target="#slides" data-slide-to="3"></li>
+                <li data-target="#slides" data-slide-to="4"></li>
+            </ul>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="">
+                    <div class="carousel-caption">
+                        <h1 class="display-2">Bootstap</h1>
+                        <h3>Website</h3>
+                        <button type="button" class="btn btn-outline-light btn-lg">View</button>
+                        <button type="button" class="btn btn-primary btn-lg">start</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="">
+                </div>
+                <div class="carousel-item">
+                    <img src="">
+                </div>
+               <div class="carousel-item">
+                   <img src="">
+                </div>
+            </div>
+        </div>
+        <!-- jumbotron -->
+        <div class="container-fluid">
+            <div class="row jumbotron">
+                <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+                    <P class="lead">A brief Intro</P>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
+                    <a href="#"><button type="button" class="btn btn-outline-danger btn-lg">about me</button></a>
+                </div>
+            </div>
+        </div>
+
+
           <!-- Primary View -->
         <div class="fullPage hidePage" id="bioPage">
             TODO: Fill in bio info here: What is your background? Why do you want to go into development? What do you love about development? -->
